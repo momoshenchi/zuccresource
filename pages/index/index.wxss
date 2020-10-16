@@ -1,0 +1,38 @@
+swiper{
+
+  width: 750rpx;
+  /* //  图片高度 */
+  height: calc(100vw*500/800);
+}
+image{
+  width:750rpx;
+}
+
+.cate{
+  display: flex;
+  flex:1;
+}
+
+.img_cate{
+  margin: 120rpx  ;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+
+.pulldown{
+  margin: 20rpx;
+}
+.goods_item{
+  
+  width: 100%;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #ccc;
+  height: 160rpx;
+}
+
+.append{
+  margin-top: 20rpx;
+}

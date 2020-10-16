@@ -1,0 +1,31 @@
+.title{
+  display: flex;
+ 
+}
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding:  15rpx 0;
+}
+.active{
+  color: var(--themeColor);
+  border-bottom:  5rpx solid currentColor;
+}
+
+.first,.second,.third{
+  margin: 20rpx;
+
+}
+.goods_item{
+  
+  width: 100%;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #ccc;
+  height: 160rpx;
+}
+
+.append{
+  margin-top: 20rpx;
+}

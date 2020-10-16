@@ -1,0 +1,22 @@
+<!--pages/detail/detail.wxml-->
+<view>
+	<image></image>
+	<view class="main">
+		{{detailList[0].name}}
+	</view>
+	<view class="append">
+		<view class="item">
+			页数: {{detailList[0].pages}}
+		</view>
+		<view class="item">
+			下载次数: {{detailList[0].downloadtimes}}
+		</view>
+		<view class="item">
+			好评率:{{detailList[0].goodrate}}
+		</view>
+		<view class="item">
+			上传时间:{{detailList[0].uploadtime}}
+		</view>
+	</view>
+
+</view>

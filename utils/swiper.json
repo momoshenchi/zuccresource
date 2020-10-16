@@ -1,0 +1,17 @@
+{
+  "status": 200,
+  "message": [
+    {
+      "id": 0,
+      "url": "cloud://appyunappyun-5g9b6heh81f6fadf.6170-appyunappyun-5g9b6heh81f6fadf-1303856757/swiper/1.jpg"
+    },
+    {
+      "id": 1,
+      "url": "cloud://appyunappyun-5g9b6heh81f6fadf.6170-appyunappyun-5g9b6heh81f6fadf-1303856757/swiper/2.jpg"
+    },
+    {
+      "id": 2,
+      "url": "cloud://appyunappyun-5g9b6heh81f6fadf.6170-appyunappyun-5g9b6heh81f6fadf-1303856757/swiper/3.jpg"
+    }
+  ]
+}

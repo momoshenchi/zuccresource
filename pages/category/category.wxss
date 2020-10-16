@@ -1,0 +1,35 @@
+/* pages/category/category.wxss */
+page{
+  height: 100%;
+}
+.container{
+  height: 100%; 
+  display: flex;
+
+}
+.left{
+  flex:2;
+  /* background-color: aqua; */
+}
+.menu{
+  height: 80rpx;
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  font-size:  30rpx;
+}
+.active{
+  color: var(--themeColor);
+  border-left:5rpx solid currentColor ;
+}
+.goods{
+  height: 60rpx;
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  font-size:  30rpx;
+}
+.right{
+  flex:5;
+  /* background-color: red; */
+}

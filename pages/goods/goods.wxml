@@ -1,0 +1,45 @@
+<search>
+</search>
+<view class="title">
+  <view wx:for="{{tabs}}" wx:key="id" class="item  {{item.isActive?'active':''}}" bindtap="itemtap"
+    data-idx="{{index}}">
+    {{item.value}}
+  </view>
+
+</view>
+<view wx:if="{{tabs[0].isActive}}">
+  <view class="first">
+    <navigator class="goods_item" wx:for="{{goods_list}}" wx:key="id" url="/pages/detail/detail?tid={{item.id}}">
+      <view class="info">
+          {{item.name}}
+      </view>
+      <view class="append">
+        页数: {{item.pages}} 下载次数: {{item.downloadtimes}} 上传时间:{{item.uploadtime}} 好评率:{{item.goodrate}}
+      </view>
+    </navigator>
+  </view>
+</view>
+<view wx:elif="{{tabs[1].isActive}}">
+  <view class="second">
+    <navigator class="goods_item">
+      <view class="info">
+        浙大城市学院2008-2009-2数据库系统原理期末试卷B卷
+      </view>
+      <view class="append">
+        下载次数:{{}} 上传时间:{{}}
+      </view>
+    </navigator>
+  </view>
+</view>
+<view wx:elif="{{tabs[2].isActive}}">
+  <view class="third">
+    <navigator class="goods_item">
+      <view class="info">
+        浙大城市学院2008-2009-2数据库系统原理期末试卷C卷
+      </view>
+      <view class="append">
+        下载次数:{{}} 上传时间:{{}}
+      </view>
+    </navigator>
+  </view>
+</view>
