@@ -21,28 +21,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
     this.setData({
       id : parseInt(options.tid)
     })
-    const c = wx.getStorageSync('details') //使用超时缓存技术
-    if (!c) {
-      this.getDetail();
-    } else {
-      if (Date.now() - c.time > 20000) //大于20s,判断过期
-      {
-        this.getDetail();
-      } else {
-        let detailList = c.data
-        let don = detailList[0].downloadtimes
-        let id=detailList[0].id
-        this.setData({
-          detailList,
-          don,
-          id
-        })
-      }
-    }
-    
   },
   getContent(){
     con.where({
@@ -205,10 +187,6 @@ Page({
       "id": this.data.id
     }).get({
       success: (res) => {
-        wx.setStorageSync('details', {
-          time: Date.now(),
-          data: res.data
-        })
         let detailList = res.data
         let don = detailList[0].downloadtimes
         let id=detailList[0].id
@@ -375,8 +353,11 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    this.getContent();
+  onShow: function (options) {
+   
+    
+      this.getDetail();
+      this.getContent();
   },
 
   /**
