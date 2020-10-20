@@ -1,0 +1,33 @@
+<view class="content">
+  <view class="bg">
+    <form bindsubmit="formSubmit">
+      <view class="search">
+        <button class='find' form-type="submit" style="width:50px;height:30x">
+          查询
+        </button>
+        <input type="text" name="find" placeholder="帖子名称" form-type="submit" />
+      </view>  
+    </form> 
+    <view url="/pages/forum/forum" class="btn" bindtap="toforum">
+      发帖
+    </view>
+  </view>
+
+
+<view wx:for="{{list}}" wx:key="list">
+  <navigator url="/pages/focon/focon?id={{item.id}}" open-type="navigate">
+    <view class="title">{{item.title}}</view>
+    <view class="pic">
+      <image style="width:30%;height:69px;" src="{{item.photo}}" />
+      <view class="info">
+        <view class="desc">
+          <text>{{item.commentNumber}}条评论</text>
+          <text>发帖日期 : {{item.time}}</text>
+          <text>楼主：{{item.writername}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="hr"></view>
+  </navigator>
+</view>
+</view>

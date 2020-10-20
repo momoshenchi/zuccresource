@@ -7,7 +7,7 @@
     <swiper autoplay interval="5000" circula indicator-dots>
       <swiper-item wx:for="{{swiperList}}" wx:key="id">
         <navigator>
-          <image src="{{item.url}}" mode="widthFix" ></image>
+          <image src="{{item.url}}" mode="widthFix"></image>
         </navigator>
       </swiper-item>
     </swiper>
@@ -15,19 +15,34 @@
 
 
   <view class="cate">
-    <image mode="widthFix" src="{{cateList[0].url}}" class="img_cate" bindtap="upload"></image>
-    <navigator >
-      <image mode="widthFix" src="{{cateList[1].url}}" class="img_cate" ></image>
-    </navigator>
+    <view class="i">
+      <view>上传</view>
+      <view>
+        <image mode="widthFix" src="{{cateList[0].url}}" class="img_cate" bindtap="upload"></image>
+      </view>
+    </view>
+    <view class="i">
+      <view>发帖</view>
+      <view>
+        <navigator url="/pages/talk/talk">
+          <image mode="widthFix" src="{{cateList[1].url}}" class="img_cate"></image>
+        </navigator>
+      </view>
+    </view>
   </view>
 
   <view class="pulldown">
     <navigator class="goods_item" wx:for="{{contentList}}" wx:key="id" url="/pages/detail/detail?tid={{item.id}}">
       <view class="info">
-          {{item.name}}
+        {{item.name}}
       </view>
       <view class="append">
-        页数: {{item.pages}} 下载次数: {{item.downloadtimes}} 上传时间:{{item.uploadtime}} 好评率:{{item.goodrate}}
+        <view>
+          下载次数: {{item.downloadtimes}}
+        </view>
+        <view>
+          页数:{{item.pages}}
+        </view>
       </view>
     </navigator>
   </view>

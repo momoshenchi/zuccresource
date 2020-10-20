@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  
+  },
+  "navigationBarTitleText": "论坛",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+  
+}

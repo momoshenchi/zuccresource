@@ -26,7 +26,8 @@ Page({
     goods_list: [],
     now_list: [],
     goodid: 0,
-    cataid:  0
+    cataid:  0,
+    page:0
   },
   itemtap(e) {
     const index = e.target.dataset.idx;
@@ -105,7 +106,8 @@ Page({
    */
   onPullDownRefresh: function () {
       this.setData({
-        goods_list:[]
+        goods_list:[],
+        page:0
       })
       this.getGoodList();
   },
@@ -114,7 +116,30 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log("end")
+    let page=this.data.page+20
+    let goods_list=this.data.goods_list
+    talk.skip(page).get({
+      success: res => {
+        let newList = res.data
+        goods_list=goods_list.concat(newList)
+        this.setData({
+          goods_list,
+          page
+        })
+        if(res.data.length==0)
+        {
+          wx.showToast({
+            title: '已经没有更多内容了',
+            icon:'none',
+            duration: 1500
+          })
+        }
+      },
+      fail: (err) => {
+        console.log(err)
+      }
+    })
   },
 
   /**

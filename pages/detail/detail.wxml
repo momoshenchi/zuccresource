@@ -1,6 +1,7 @@
 <!--pages/detail/detail.wxml-->
 <view>
-	<image></image>
+	<view bindtap="peek" class="peek">预览</view>
+
 	<view class="main">
 		{{detailList[0].name}}
 	</view>
@@ -9,14 +10,41 @@
 			页数: {{detailList[0].pages}}
 		</view>
 		<view class="item">
-			下载次数: {{detailList[0].downloadtimes}}
+			下载次数: {{don}}
 		</view>
 		<view class="item">
-			好评率:{{detailList[0].goodrate}}
-		</view>
-		<view class="item">
-			上传时间:{{detailList[0].uploadtime}}
+			好评率: {{strrate}}
 		</view>
 	</view>
+	<view class="down">
+		<view class="item">
+			上传时间: {{detailList[0].uploadtime}}
+		</view>
+	</view>
+	<view class="up">
+		<view>选择评价</view>
+		<image src="/icon/cuihaopingtixing.png" mode="widthFix" bindtap="incr" class="to"></image>
+		<image src="/icon/chaping.png" mode="widthFix" bindtap="desc" class="to"></image>
+	</view>
+	<view class="comment">
+		<view class="num">
+			<viwe class="comment_item">发表评论</viwe>	
+			<veiw >评论数量 : {{many.commentNum}}</veiw>
+		</view>
+		<view class="content" wx:for="{{content}}" wx:key="index">
+			{{item}}
+		</view>
+	</view>
+	<view class="btm_tool">
+		<view class="tool_item">
+			<image src="/icon/collect.png" mode="widthFix" class="image_down" bindtap="collect"></image>
+			<view bindtap="collect">加入收藏</view>
+		</view>
+		<view class="tool_item">
+			<image src="/icon/downoload.png" mode="widthFix" class="image_down" bindtap="down"></image>
+			<view bindtap="down">立即下载</view> 
+		</view>
+	</view>
+
 
 </view>

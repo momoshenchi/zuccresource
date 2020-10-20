@@ -1,5 +1,6 @@
 {
   "description": "项目配置文件",
+  "cloudfunctionRoot": "cloud/",
   "packOptions": {
     "ignore": []
   },
@@ -12,7 +13,7 @@
     "minified": true,
     "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -45,6 +46,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "current": -1,
@@ -88,6 +90,26 @@
           "name": "详情",
           "pathName": "pages/detail/detail",
           "query": "tid=2",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/forum/forum",
+          "pathName": "pages/forum/forum",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/talk/talk",
+          "pathName": "pages/talk/talk",
           "scene": null
         }
       ]

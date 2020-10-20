@@ -1,11 +1,15 @@
 {
+  "cloud": true,
   "pages": [
     "pages/index/index",
     "pages/my/my",
     "pages/search/search",
     "pages/category/category",
     "pages/goods/goods",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/forum/forum",
+    "pages/talk/talk",
+    "pages/focon/focon"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -22,10 +22,18 @@
   
   width: 100%;
   font-size: 32rpx;
+  color: #ff9999;
+  font-weight: bold;
   border-bottom: 2rpx solid #ccc;
-  height: 160rpx;
+  height: 120rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  justify-content: space-evenly;
 }
+.info{
+  text-align:  center;
 
+}
 .append{
   margin-top: 20rpx;
 }

@@ -27,9 +27,11 @@ page{
   display:  flex;
   justify-content: center;
   align-items:  center;
-  font-size:  30rpx;
+  font-size:  40rpx;
+  border-bottom: 2rpx solid gray;
+ 
 }
 .right{
   flex:5;
-  /* background-color: red; */
+
 }

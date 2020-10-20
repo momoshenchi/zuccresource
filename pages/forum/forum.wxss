@@ -1,0 +1,42 @@
+/* pages/forum/forum.wxss */
+input ,textarea{
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+.title{
+  margin-top: 20rpx;
+  height:  100rpx;
+  background-color: #EEEEEE;
+  border-radius: 50rpx;
+}
+.fontNum{
+  text-align: right;
+}.chooseImg{
+  margin-top: 20rpx;
+}
+.chooseImgBoxMore{
+  width: 250rpx;
+  height: 250rpx;
+  background-color: wheat;
+}
+.content{
+  margin-top: 20rpx;
+  background-color: #EEEEEE;
+  border-radius: 50rpx;
+  height: 370rpx;
+  /* padding-bottom: 30rpx; */
+}
+.sub{
+  margin-top: 20rpx;
+  margin-left: 180rpx;
+  width: 300rpx;
+  height: 80rpx;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  font-size: 35rpx;
+  justify-content: center;
+  border-radius: 40rpx;
+  background-color: var(--themeColor);
+}

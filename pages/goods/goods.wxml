@@ -14,7 +14,7 @@
           {{item.name}}
       </view>
       <view class="append">
-        页数: {{item.pages}} 下载次数: {{item.downloadtimes}} 上传时间:{{item.uploadtime}} 好评率:{{item.goodrate}}
+        页数: {{item.pages}} 下载次数: {{item.downloadtimes}} 上传时间:{{item.uploadtime}} 
       </view>
     </navigator>
   </view>
@@ -26,7 +26,7 @@
         浙大城市学院2008-2009-2数据库系统原理期末试卷B卷
       </view>
       <view class="append">
-        下载次数:{{}} 上传时间:{{}}
+        页数: {{item.pages}} 下载次数:{{}} 上传时间:{{}}
       </view>
     </navigator>
   </view>
@@ -38,7 +38,7 @@
         浙大城市学院2008-2009-2数据库系统原理期末试卷C卷
       </view>
       <view class="append">
-        下载次数:{{}} 上传时间:{{}}
+        页数: {{item.pages}}  下载次数:{{}} 上传时间:{{}}
       </view>
     </navigator>
   </view>

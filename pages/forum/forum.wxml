@@ -1,0 +1,34 @@
+<!-- pages/post /index.wxml -->
+<view class="wrap">
+  <view class="title">
+    <input placeholder="城院少年，乐于分享" maxlength="30" bindinput="getTitle" />
+  </view>
+  <view class="content">
+    <textarea auto-focus="true" maxlength="200" bindinput="textareaCtrl" placeholder-style="color:#999;"
+      placeholder="一起学习,一起进步"/>
+    <view class='fontNum'>
+      {{content.length}}/200
+    </view>
+  </view>
+
+
+  <view class="chooseImg">
+    <view wx:for="{{tempImg}}" wx:for-item="item"wx:key="ids"wx:for-index="index">
+      <view class="chooseImgBox">
+          <image src="{{item}}" mode="widthFit"/>
+          <view data-index="{{index}}" bindtap="removeImg" class="removeImg"></view>
+      </view>
+  </view>
+    <!-- 判断图片 大于等于3张的时候 取消 更多 -->
+      <block wx:if="{{tempImg.length < 3}}">
+        <view class="chooseImgBoxMore" bindtap="choosePhoto">
+              <view class="arrow"></view>
+        </view>
+      </block>
+  </view> 
+
+
+  <view class='sub'bindtap="submitPost" >
+   提交
+  </view>
+</view>

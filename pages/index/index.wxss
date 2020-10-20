@@ -7,14 +7,24 @@ swiper{
 image{
   width:750rpx;
 }
-
+.i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 .cate{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex:1;
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #0000df;
 }
 
 .img_cate{
-  margin: 120rpx  ;
+  
   margin-top: 0;
   margin-bottom: 0;
   width: 120rpx;
@@ -22,17 +32,21 @@ image{
 }
 
 
-.pulldown{
-  margin: 20rpx;
-}
 .goods_item{
   
   width: 100%;
-  font-size: 32rpx;
+  font-size: 35rpx;
+  font-weight: 500;
   border-bottom: 2rpx solid #ccc;
-  height: 160rpx;
+  height: 120rpx;
+ text-align: center;
+  margin: 10rpx;
+  padding: 10rpx;
+  padding-top: 0;
 }
 
 .append{
   margin-top: 20rpx;
+  display: flex;
+  justify-content: space-evenly;
 }

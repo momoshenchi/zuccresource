@@ -1,0 +1,84 @@
+/* pages/talk.wxss */
+.bg{
+  background-color: #f76262;
+  height: 40px;
+  display: flex;
+  padding: 20rpx;
+  justify-content: center;
+}
+.search{
+  width:450rpx;
+  display: flex;
+  border:1px solid #cccccc;
+  height: 25px;
+  margin-right:10px;
+  background-color: #F6F5F3;
+  border-radius: 5px;
+  align-items: center; 
+}
+
+.search input{
+  margin-left: 10px;
+  font-size: 13px;
+}
+.find{
+  width: 50px;
+  height: 25px;
+  border: 0 solid #ffffff;
+  font-size: 32rpx;
+  padding: 0px;
+  align-items: center;
+}
+.btn{
+
+  margin-left: 60rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  width: 30%;
+  border-radius: 20rpx;
+  color:#ffffff;
+ 
+}
+
+
+.title{
+  color: #444444;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pic image{
+  margin-right: 10px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999999;
+}
+.desc{
+  width:90%;
+}
+.desc text{
+  margin-right: 10px;
+}
+
+.hr{
+  border:1px solid #cccccc;
+  opacity: 0.2;
+  margin-top:10px;
+}
+.write{
+  width: 50%;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+.input{
+  margin-left: 10px;
+  border: 1rpx solid #ffcc66;
+  border-radius: 8px;
+  background:#fff;
+}
+
+
+
